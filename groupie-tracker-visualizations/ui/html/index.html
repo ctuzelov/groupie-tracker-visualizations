@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ui/static/css/main.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="ui/static/img/icon.png">
+    <title>Groupie-tracker</title>
+</head>
+<body>
+    <a href="http://127.0.0.1:4000/">
+        <p>
+            Groupie-tracker
+        </p>
+    </a>
+    <div>
+        {{range .}}	
+
+    <figure class = "imgg">
+        
+        <a href="/artist/{{.ID}}">
+            <img src="{{.Image}}">
+        </a>
+        <a href="/artist/{{.ID}}" style="text-decoration: none; color:black;">
+            <figcaption>
+                {{.Name}}
+            </figcaption>
+        </a>
+    </figure>
+        {{end}}
+    </div>
+</body>
+<footer><strong>
+    <a href="https://01.alem.school/git/Aishagul">
+         @Aishagul
+    </a>
+    <a href="https://01.alem.school/git/ctuzelov">
+        @ctuzelov
+    </a>
+</strong>
+</footer>
+</html>
